@@ -6,7 +6,6 @@ from pathlib import Path    # Allows us to set up paths & parent directories to 
 openai.api_key = os.getenv('OPENAI_API_KEY')
 
 PATH_TO_BLOG_REPO = Path("/Users/veechente/PycharmProjects/Work/Udemy/OpenAI API Bootcamp/OpenAI Notebooks and Files/04-Auto-Blog-Post/veechente95.github.io/.git")
-# PATH_TO_BLOG_REPO = Path("/Users/veechente/PycharmProjects/Work/Udemy/OpenAI API Bootcamp/OpenAI Notebooks and Files/04-Auto-Blog-Post
 PATH_TO_BLOG = PATH_TO_BLOG_REPO.parent
 
 # subdirectory path with blog content
