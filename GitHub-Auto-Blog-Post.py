@@ -6,6 +6,7 @@ from pathlib import Path    # Allows us to set up paths & parent directories to 
 openai.api_key = os.getenv('OPENAI_API_KEY')
 
 PATH_TO_BLOG_REPO = Path("/Users/veechente/PycharmProjects/Work/Udemy/OpenAI API Bootcamp/OpenAI Notebooks and Files/04-Auto-Blog-Post/veechente95.github.io/.git")
+# PATH_TO_BLOG_REPO = Path("/Users/veechente/PycharmProjects/Work/Udemy/OpenAI API Bootcamp/OpenAI Notebooks and Files/04-Auto-Blog-Post
 PATH_TO_BLOG = PATH_TO_BLOG_REPO.parent
 
 # subdirectory path with blog content
@@ -24,9 +25,10 @@ def update_blog(commit_message='updates blog'):
     origin.push()
 
 
-random_text_string = "This is a test. This is a test."
+random_text_string = "This is a rando text string"
 
-with open(PATH_TO_BLOG/"index.html", "w") as f:
+# This allows us to push text into HTML file
+with open(PATH_TO_BLOG/"index.html", 'w') as f:
     f.write(random_text_string)
 
 update_blog()
