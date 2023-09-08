@@ -24,7 +24,7 @@ def update_blog(commit_message='updates blog'):
     origin.push()
 
 
-random_text_string = "This is a test string to check if it gets added to GitHub repo"
+random_text_string = "This is a test. This is a test."
 
 with open(PATH_TO_BLOG/"index.html", "w") as f:
     f.write(random_text_string)
